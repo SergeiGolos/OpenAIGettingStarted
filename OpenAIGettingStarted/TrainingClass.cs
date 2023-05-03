@@ -8,10 +8,12 @@ public static class TrainingClass
         IEnumerable<PromptExample> examples,
         string question)
     {
-        var chat = api.Chat.CreateConversation();
+        var chat = api.Chat.CreateConversation();        
+        Console.WriteLine($"Training Instructions: {trainer.GetType().Name}");
         chat.AppendSystemMessage(trainer.Instructions);
         foreach (var example in examples)
         {
+            Console.WriteLine($"Training Examples: {example.GetType().Name}");
             chat.AppendUserInput(example.Input);
             chat.AppendExampleChatbotOutput(example.Output);
         }

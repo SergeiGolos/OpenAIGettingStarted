@@ -16,11 +16,10 @@
                 ";
 
         public override string Output => @"
-                Summary
-                - 20 deadlifts @135lb
-                - 24 deadlifts @185lb
-                - 100 Single-arm KB Swings @53lb
-                - 10 Turkish Getups @53lb
+                [{ 'reps': '20', 'exercise' : 'Deadlifts', 'weight' : '135', 'units': 'pounds' },
+                 { 'reps': '24', 'exercise' : 'Deadlifts', 'weight' : '185', 'units': 'pounds' },
+                 { 'reps': '100', 'exercise' : 'Single-arm KB Swings', 'weight' : '53', 'units': 'pounds' },
+                 { 'reps': '10', 'exercise' : 'Turkish Getups', 'weight' : '53', 'units': 'pounds' }]                 
                 ";
     }
 }
