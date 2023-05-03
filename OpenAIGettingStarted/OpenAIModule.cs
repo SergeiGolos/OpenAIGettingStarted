@@ -9,8 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OpenAIGettingStarted
-{    
-    internal class OpenAIModule : Module
+{
+    public class OpenAIModule : Module
     {        
         protected override void Load(ContainerBuilder builder)
         {

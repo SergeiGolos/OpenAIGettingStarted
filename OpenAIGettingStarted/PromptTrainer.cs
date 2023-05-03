@@ -1,17 +1,9 @@
-﻿namespace OpenAIGettingStarted
+﻿using OpenAIGettingStarted.Trainers.WorkoutParsing;
+
+namespace OpenAIGettingStarted
 {
-    public class PromptTrainer
+    public abstract class PromptTrainer : IPromptTrainer
     {
-        public PromptTrainer(string systemInstructions) => SystemInstructions = systemInstructions;
-
-        public string SystemInstructions { get; set; }
-        
-        public List<PromptExample> Training { get; set; } = new List<PromptExample>();
-
-        public PromptTrainer Example(PromptExample example)
-        {
-            Training.Add(example);
-            return this;
-        }
+        public abstract string Instructions { get; }        
     }
 }

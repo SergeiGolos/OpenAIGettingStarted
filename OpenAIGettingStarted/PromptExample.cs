@@ -1,15 +1,8 @@
-﻿namespace OpenAIGettingStarted
+﻿namespace OpenAIGettingStarted.Trainers.WorkoutParsing
 {
-    public class PromptExample
+    public abstract class PromptExample
     {
-        public PromptExample(string input) => Input = input;
-        public string Input { get; private set; }
-        public string ExpectedOutput { get; private set; } = string.Empty;
-
-        public PromptExample ResultsIn(string output)
-        {
-            this.ExpectedOutput = output;
-            return this;
-        }
+        public abstract string Input { get; }
+        public abstract string Output { get; }
     }
 }
