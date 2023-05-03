@@ -1,4 +1,4 @@
-﻿namespace OpenAIGettingStarted.Trainers.WorkoutParsing
+﻿namespace OpenAIGettingStarted
 {
     public abstract class PromptExample
     {

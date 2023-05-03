@@ -1,4 +1,4 @@
-﻿namespace OpenAIGettingStarted.Trainers.WorkoutParsing
+﻿namespace OpenAIGettingStarted
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class TrainerAttribute : Attribute

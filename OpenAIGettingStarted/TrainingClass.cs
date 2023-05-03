@@ -1,6 +1,5 @@
 ﻿using OpenAI_API;
 using OpenAIGettingStarted;
-using OpenAIGettingStarted.Trainers.WorkoutParsing;
 
 public static class TrainingClass
 {

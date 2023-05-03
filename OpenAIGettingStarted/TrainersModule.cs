@@ -1,5 +1,4 @@
 ﻿using Autofac;
-using OpenAIGettingStarted.Trainers.WorkoutParsing;
 
 namespace OpenAIGettingStarted
 {

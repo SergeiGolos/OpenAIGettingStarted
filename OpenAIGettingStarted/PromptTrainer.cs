@@ -1,6 +1,4 @@
-﻿using OpenAIGettingStarted.Trainers.WorkoutParsing;
-
-namespace OpenAIGettingStarted
+﻿namespace OpenAIGettingStarted
 {
     public abstract class PromptTrainer : IPromptTrainer
     {
